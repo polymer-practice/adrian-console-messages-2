@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="console-messages-2">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `console-messages-2`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class ConsoleMessages2 extends Polymer.Element {
+      static get is() { return 'console-messages-2'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'console-messages-2'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ConsoleMessages2.is, ConsoleMessages2);
+  </script>
+</dom-module>
